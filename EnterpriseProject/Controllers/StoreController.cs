@@ -38,8 +38,9 @@ namespace EnterpriseProject.Controllers
 
             for (int i = 1; i < 4; i++)
             {
-                albums.Add(new Albums { Title = "Album " + i.ToString(), AlbumArtUrl = "/Content/Images/placeholder.gif" });
+                albums.Add(new Albums { Title = "Album " + i.ToString(),Price=8.99, AlbumArtUrl = "/Content/Images/placeholder.gif" });
             }
+        
 
             ViewBag.Genre = genre;
             return View(albums);

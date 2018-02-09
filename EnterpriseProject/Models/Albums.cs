@@ -10,5 +10,8 @@ namespace EnterpriseProject.Models
         public string Title { get; set; }
         public Genre Genre { get; set; }
         public string AlbumArtUrl { get; set; }
+        public double Price { get; set; }
+
+    
     }
 }
