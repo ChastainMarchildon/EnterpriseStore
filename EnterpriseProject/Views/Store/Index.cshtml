@@ -1,0 +1,14 @@
+﻿@model IEnumerable<EnterpriseProject.Models.Genre>
+@{
+    ViewBag.Title = "Store";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>MVC Music Store</h2>
+
+<ul>
+    @foreach (var g in Model)
+    {
+        <li>@Html.ActionLink(@g.Name,"Details","Store",new { genre = g.Name },null)</li>
+    }
+</ul>

@@ -1,0 +1,14 @@
+﻿@model IEnumerable<EnterpriseProject.Models.Albums>
+@{
+    ViewBag.Title = ViewBag.Genre;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Genre Albums</h2>
+
+@foreach (var a in Model)
+{
+<article>
+    <h3>@a.Title</h3>
+</article>
+}
